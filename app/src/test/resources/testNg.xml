@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Robot Class Related TestCases">
+    <listeners>
+        <listener class-name="Robot_automation.ListenersClass"></listener>
+    </listeners>
+    <parameter name="filepath" value="C:\UploadFile\file.txt"></parameter>
+    <test name="Upload file from local using robot class">
+        <classes>
+            <class name="Robot_automation.AppTest"/>
+            <methods>
+                <include name="Robot_Class_Related_TestCase01"></include>
+            </methods>
+        </classes>
+    </test> <!-- ParallelTesting -->
+</suite> <!-- Suite -->
